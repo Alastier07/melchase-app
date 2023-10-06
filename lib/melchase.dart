@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:melchase_app/screens/home_screen.dart';
 
 class MelchaseApp extends StatelessWidget {
   const MelchaseApp({super.key});
@@ -6,11 +7,7 @@ class MelchaseApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+      home: HomeScreen(),
     );
   }
 }
