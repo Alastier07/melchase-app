@@ -12,6 +12,8 @@ class PurchaseBloc extends Bloc<PurchaseEvent, PurchaseState> {
     on<UpdatePurchase>(_updatePurchase);
   }
 
+  int get purchaseLenght => state.purchase.length;
+
   void _addPurchase(AddPurchase event, Emitter<PurchaseState> emit) {
     state.purchase.add(event.purchase);
     emit(PurchaseBlocUpdated(purchase: state.purchase));
