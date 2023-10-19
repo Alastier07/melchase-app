@@ -1,3 +1,5 @@
+import 'item_model.dart';
+
 class Purchase {
   Purchase({
     required this.pid,
@@ -8,16 +10,4 @@ class Purchase {
   final int pid;
   final String title;
   final List<Item> items;
-}
-
-class Item {
-  Item({
-    required this.name,
-    required this.quantity,
-    required this.amount,
-  });
-
-  final String name;
-  final String quantity;
-  final double amount;
 }
